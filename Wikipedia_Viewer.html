@@ -1,0 +1,83 @@
+<html>
+<head>
+<!--Important MetaData: title, keywords, etc..-->
+<meta charset="UTF-8">
+<meta name="description" content="Wikipedia page that can produce random pages">
+<meta name="keywords" content="Wikipedia, freecodecamp project, Viewer, search button">
+<title>Wikipedia Viewer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="greatdeveloper">
+  
+<!--LINKS TO EXTERNAL FILES-->
+
+<!--Link to Google Fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  
+<!--Links to Bootstrap-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<!--Link to w3 School library-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- Links to Devicons -->
+<link rel="stylesheet" href= "https://cdn.rawgit.com/konpa/devicon/4f6a4b08efdad6bb29f9cc801f5c07e263b39907/devicon.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+<!--External Link to JQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+
+</head>
+
+<body>
+  
+ <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-md-offset-4 col-xs-12">
+      <!--Link to random Wikipedia article--> 
+      <div class="row">
+        <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank" id="randomPage">
+        <i class="fa fa-wikipedia-w fa-4x" aria-hidden="true"></i>
+        
+        <!--random icon and spinning gear-->
+        <i class="fa fa-random fa-5x"></i>
+        </a>
+       
+      </div>
+      <!--Search for a Wikipedia Article-->
+      <div class="row">
+       <div class="input-group">
+          <input type="text" class="form-control" name="search" id="search">
+         <div class="input-group-btn">
+            <button type="button" role="button" id="searchButton" class="btn btn-primary btn-medium">Search</button>
+         </div>
+        </div>
+        </div>
+    </div>
+   </div>
+   <!--Wikipedia article information will go here-->
+   <div class="w3-card w3-hover-shadow">
+     <header class="w3-container w3-blue" id="Wikipedia_title">
+       Wikipedia Title goes here
+     </header>
+     <div class="w3-container w3-grey" id = "Wikipedia_Article">
+       <p>snippet summarizing article here.<p>
+     </div>
+   </div>
+        
+        <!--javascript will dynamically place 5 rows of Wikipedia search results here-->
+        
+ 
+   
+</body>
+</html>
